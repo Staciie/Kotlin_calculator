@@ -32,11 +32,82 @@ class MainActivity : AppCompatActivity() {
         val clearButton = findViewById<Button>(R.id.delete_button);
 
 
+        val resultStringBuilder = StringBuilder();
+        resultOutputView.text = resultStringBuilder;
 
+        zeroButton.setOnClickListener {
+            resultStringBuilder.append(0);
+            resultOutputView.text = resultStringBuilder;
+        }
+        oneButton.setOnClickListener {
+            resultStringBuilder.append(1);
+            resultOutputView.text = resultStringBuilder;
+        }
 
+        twoButton.setOnClickListener {
+            resultStringBuilder.append(2);
+            resultOutputView.text = resultStringBuilder;
+        }
 
+        threeButton.setOnClickListener {
+            resultStringBuilder.append(3);
+            resultOutputView.text = resultStringBuilder;
+        }
 
+        fourButton.setOnClickListener {
+            resultStringBuilder.append(4);
+            resultOutputView.text = resultStringBuilder;
+        }
 
+        fiveButton.setOnClickListener {
+            resultStringBuilder.append(5);
+            resultOutputView.text = resultStringBuilder;
+        }
+
+        sixButton.setOnClickListener {
+            resultStringBuilder.append(6);
+            resultOutputView.text = resultStringBuilder;
+        }
+
+        sevenButton.setOnClickListener {
+            resultStringBuilder.append(7);
+            resultOutputView.text = resultStringBuilder;
+        }
+
+        eightButton.setOnClickListener {
+            resultStringBuilder.append(8);
+            resultOutputView.text = resultStringBuilder;
+        }
+
+        nineButton.setOnClickListener {
+            resultStringBuilder.append(9);
+            resultOutputView.text = resultStringBuilder;
+        }
+
+        plusButton.setOnClickListener {
+            resultStringBuilder.append("+");
+            resultOutputView.text = resultStringBuilder;
+        }
+
+        minusButton.setOnClickListener {
+            resultStringBuilder.append("-");
+            resultOutputView.text = resultStringBuilder;
+        }
+
+        multiplicationButton.setOnClickListener {
+            resultStringBuilder.append("*");
+            resultOutputView.text = resultStringBuilder;
+        }
+
+        divisionButton.setOnClickListener {
+            resultStringBuilder.append("/");
+            resultOutputView.text = resultStringBuilder;
+        }
+
+        dotButton.setOnClickListener {
+            resultStringBuilder.append(".");
+            resultOutputView.text = resultStringBuilder;
+        }
 
 
         equalButton.setOnClickListener {
