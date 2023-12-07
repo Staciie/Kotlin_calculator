@@ -15,8 +15,10 @@
             android:id="@+id/result_output"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:textSize="40sp"
             android:background="@android:color/holo_orange_light"
             android:text="Result:"
+            android:gravity="end|bottom"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
