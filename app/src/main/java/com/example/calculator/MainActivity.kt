@@ -3,6 +3,7 @@ package com.example.calculator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import com.ezylang.evalex.Expression
@@ -32,7 +33,9 @@ class MainActivity : AppCompatActivity() {
         val divisionButton = findViewById<Button>(R.id.division_button);
         val multiplicationButton = findViewById<Button>(R.id.multiplication_button);
         val dotButton = findViewById<Button>(R.id.dot_button);
-        val clearButton = findViewById<Button>(R.id.delete_button);
+        val clearButton = findViewById<Button>(R.id.clear_button);
+        val deleteButton = findViewById<ImageButton>(R.id.delete_button);
+
 
 
         val resultStringBuilder = StringBuilder();
@@ -136,6 +139,11 @@ class MainActivity : AppCompatActivity() {
             resultStringBuilder.clear();
             resultOutputView.text = "0";
             allowDot = true;
+        }
+
+        deleteButton.setOnClickListener{
+            resultStringBuilder.deleteCharAt(resultStringBuilder.length- 1);
+            resultOutputView.text = resultStringBuilder;
         }
     }
 }

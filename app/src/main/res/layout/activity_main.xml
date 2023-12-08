@@ -231,7 +231,7 @@
                         android:text="0" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/delete_button"
+                        android:id="@+id/clear_button"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
@@ -239,24 +239,41 @@
                         android:backgroundTint="@color/darkBlue"
                         android:textColor="@color/white"
                         android:textSize="20sp"
-                        android:text="Clear" />
+                        android:text="C" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="25">
-
+                android:layout_weight="25"
+                android:orientation="vertical">
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/equal_button"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="75"
                     android:background="@drawable/square_button_background"
                     android:backgroundTint="@color/pink"
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:text="=" />
+                <ImageButton
+                    android:id="@+id/delete_button"
+                    app:srcCompat="@drawable/delete_left_svgrepo_com"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="25"
+                    android:background="@drawable/square_button_background"
+                    android:backgroundTint="@color/pink"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="Delete"
+                    android:src="@drawable/delete_left_svgrepo_com"
+                    android:padding="30dp"
+                    android:scaleType="center"
+                    >
+             </ImageButton>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
