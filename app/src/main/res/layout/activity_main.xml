@@ -28,46 +28,30 @@
             >
 
             <androidx.appcompat.widget.AppCompatButton
+                style="@style/ButtonStyle"
                 android:id="@+id/division_button"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/square_button_background"
                 android:backgroundTint="@color/lightBlue"
-                android:textColor="@color/white"
                 android:textSize="30sp"
                 android:text="/" />
 
             <androidx.appcompat.widget.AppCompatButton
+                style="@style/ButtonStyle"
                 android:id="@+id/multiplication_button"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/square_button_background"
                 android:backgroundTint="@color/lightBlue"
-                android:textColor="@color/white"
                 android:textSize="30sp"
                 android:text="*" />
 
             <androidx.appcompat.widget.AppCompatButton
+                style="@style/ButtonStyle"
                 android:id="@+id/minus_button"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/square_button_background"
                 android:backgroundTint="@color/lightBlue"
-                android:textColor="@color/white"
                 android:textSize="30sp"
                 android:text="-" />
 
             <androidx.appcompat.widget.AppCompatButton
+                style="@style/ButtonStyle"
                 android:id="@+id/plus_button"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/square_button_background"
                 android:backgroundTint="@color/lightBlue"
-                android:textColor="@color/white"
                 android:textSize="30sp"
                 android:text="+" />
         </LinearLayout>
@@ -92,35 +76,23 @@
                     android:background="@drawable/square_button_background">
 
                     <androidx.appcompat.widget.AppCompatButton
+                        style="@style/ButtonStyle"
                         android:id="@+id/seven_button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
-                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:text="7" />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        style="@style/ButtonStyle"
                         android:id="@+id/eight_button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
-                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:text="8" />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        style="@style/ButtonStyle"
                         android:id="@+id/nine_button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
-                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:text="9" />
                 </LinearLayout>
@@ -131,35 +103,23 @@
                     android:layout_weight="1">
 
                     <androidx.appcompat.widget.AppCompatButton
+                        style="@style/ButtonStyle"
                         android:id="@+id/four_button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
-                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:text="4" />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        style="@style/ButtonStyle"
                         android:id="@+id/five_button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
-                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:text="5" />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        style="@style/ButtonStyle"
                         android:id="@+id/six_button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
-                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:text="6" />
                 </LinearLayout>
@@ -170,35 +130,23 @@
                     android:layout_weight="1">
 
                     <androidx.appcompat.widget.AppCompatButton
+                        style="@style/ButtonStyle"
                         android:id="@+id/one_button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="33.33"
-                        android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
-                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:text="1" />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        style="@style/ButtonStyle"
                         android:id="@+id/two_button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="33.33"
-                        android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
-                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:text="2" />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        style="@style/ButtonStyle"
                         android:id="@+id/three_button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="33.33"
-                        android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
-                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:text="3" />
                 </LinearLayout>
@@ -209,35 +157,23 @@
                     android:layout_weight="1">
 
                     <androidx.appcompat.widget.AppCompatButton
+                        style="@style/ButtonStyle"
                         android:id="@+id/dot_button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
-                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:text="." />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        style="@style/ButtonStyle"
                         android:id="@+id/zero_button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
-                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:text="0" />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        style="@style/ButtonStyle"
                         android:id="@+id/clear_button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
-                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:text="C" />
                 </LinearLayout>
@@ -249,24 +185,21 @@
                 android:layout_weight="25"
                 android:orientation="vertical">
                 <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonStyle"
                     android:id="@+id/equal_button"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="75"
-                    android:background="@drawable/square_button_background"
                     android:backgroundTint="@color/pink"
-                    android:textColor="@color/white"
                     android:textSize="30sp"
                     android:text="=" />
                 <ImageButton
+                    style="@style/ButtonStyle"
                     android:id="@+id/delete_button"
-                    app:srcCompat="@drawable/delete_left_svgrepo_com"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="25"
-                    android:background="@drawable/square_button_background"
                     android:backgroundTint="@color/pink"
-                    android:textColor="@color/white"
                     android:textSize="20sp"
                     android:text="Delete"
                     android:src="@drawable/delete_left_svgrepo_com"
