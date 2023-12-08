@@ -6,40 +6,26 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import com.example.calculator.databinding.ActivityMainBinding
 import com.ezylang.evalex.Expression
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding;
+    private val resultStringBuilder = StringBuilder();
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
-        val resultOutputView = findViewById<TextView>(R.id.result_output);
+        setListeners();
+    }
+
+    private fun setListeners() = with(binding) {
+        val resultOutputView = resultOutput;
+        resultOutputView.text = "";
+
         var allowDot: Boolean = true;
-
-        val zeroButton = findViewById<Button>(R.id.zero_button);
-        val oneButton = findViewById<Button>(R.id.one_button);
-        val twoButton = findViewById<Button>(R.id.two_button);
-        val threeButton = findViewById<Button>(R.id.three_button);
-        val fourButton = findViewById<Button>(R.id.four_button);
-        val fiveButton = findViewById<Button>(R.id.five_button);
-        val sixButton = findViewById<Button>(R.id.six_button);
-        val sevenButton = findViewById<Button>(R.id.seven_button);
-        val eightButton = findViewById<Button>(R.id.eight_button);
-        val nineButton = findViewById<Button>(R.id.nine_button);
-
-        val equalButton = findViewById<Button>(R.id.equal_button);
-        val plusButton = findViewById<Button>(R.id.plus_button);
-        val minusButton = findViewById<Button>(R.id.minus_button);
-        val divisionButton = findViewById<Button>(R.id.division_button);
-        val multiplicationButton = findViewById<Button>(R.id.multiplication_button);
-        val dotButton = findViewById<Button>(R.id.dot_button);
-        val clearButton = findViewById<Button>(R.id.clear_button);
-        val deleteButton = findViewById<ImageButton>(R.id.delete_button);
-
-
-
-        val resultStringBuilder = StringBuilder();
-        resultOutputView.text = resultStringBuilder;
 
         zeroButton.setOnClickListener {
             resultStringBuilder.append(0);
@@ -140,7 +126,6 @@ class MainActivity : AppCompatActivity() {
             resultOutputView.text = "0";
             allowDot = true;
         }
-
         deleteButton.setOnClickListener{
             resultStringBuilder.deleteCharAt(resultStringBuilder.length- 1);
             resultOutputView.text = resultStringBuilder;
