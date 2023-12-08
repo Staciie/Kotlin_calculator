@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val resultOutputView = findViewById<TextView>(R.id.result_output);
+        var allowDot: Boolean = true;
 
         val zeroButton = findViewById<Button>(R.id.zero_button);
         val oneButton = findViewById<Button>(R.id.one_button);
@@ -88,26 +89,33 @@ class MainActivity : AppCompatActivity() {
         plusButton.setOnClickListener {
             resultStringBuilder.append("+");
             resultOutputView.text = resultStringBuilder;
+            allowDot = true;
         }
 
         minusButton.setOnClickListener {
             resultStringBuilder.append("-");
             resultOutputView.text = resultStringBuilder;
+            allowDot = true;
         }
 
         multiplicationButton.setOnClickListener {
             resultStringBuilder.append("*");
             resultOutputView.text = resultStringBuilder;
+            allowDot = true;
         }
 
         divisionButton.setOnClickListener {
             resultStringBuilder.append("/");
             resultOutputView.text = resultStringBuilder;
+            allowDot = true;
         }
 
         dotButton.setOnClickListener {
-            resultStringBuilder.append(".");
-            resultOutputView.text = resultStringBuilder;
+            if (allowDot) {
+                resultStringBuilder.append(".");
+                resultOutputView.text = resultStringBuilder;
+                allowDot = false;
+            };
         }
 
         equalButton.setOnClickListener {
@@ -115,12 +123,14 @@ class MainActivity : AppCompatActivity() {
             val expressionResult = expression.evaluate().numberValue.toPlainString();
             resultOutputView.text = expressionResult;
             resultStringBuilder.clear();
-            resultStringBuilder.append(expressionResult)
+            resultStringBuilder.append(expressionResult);
+            allowDot = true;
         }
 
         clearButton.setOnClickListener {
             resultStringBuilder.clear();
             resultOutputView.text = "0";
+            allowDot = true;
         }
     }
 }
