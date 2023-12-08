@@ -16,14 +16,16 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:textSize="40sp"
-            android:background="@android:color/holo_orange_light"
+            android:textColor="@color/darkBlue"
+            android:background="@color/white"
             android:text="Result:"
             android:gravity="end|bottom"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp">
+            android:layout_height="100dp"
+            >
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/division_button"
@@ -32,6 +34,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/square_button_background"
                 android:backgroundTint="@color/lightBlue"
+                android:textColor="@color/white"
+                android:textSize="30sp"
                 android:text="/" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -41,6 +45,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/square_button_background"
                 android:backgroundTint="@color/lightBlue"
+                android:textColor="@color/white"
+                android:textSize="30sp"
                 android:text="*" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -50,6 +56,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/square_button_background"
                 android:backgroundTint="@color/lightBlue"
+                android:textColor="@color/white"
+                android:textSize="30sp"
                 android:text="-" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -59,6 +67,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/square_button_background"
                 android:backgroundTint="@color/lightBlue"
+                android:textColor="@color/white"
+                android:textSize="30sp"
                 android:text="+" />
         </LinearLayout>
 
@@ -88,6 +98,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:text="7" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -97,6 +109,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:text="8" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -106,6 +120,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:text="9" />
                 </LinearLayout>
 
@@ -121,6 +137,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:text="4" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -130,6 +148,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:text="5" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -139,6 +159,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:text="6" />
                 </LinearLayout>
 
@@ -154,6 +176,8 @@
                         android:layout_weight="33.33"
                         android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:text="1" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -163,6 +187,8 @@
                         android:layout_weight="33.33"
                         android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:text="2" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -172,6 +198,8 @@
                         android:layout_weight="33.33"
                         android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:text="3" />
                 </LinearLayout>
 
@@ -187,6 +215,8 @@
                         android:layout_weight="3"
                         android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:text="." />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -196,6 +226,8 @@
                         android:layout_weight="3"
                         android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:text="0" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -205,6 +237,8 @@
                         android:layout_weight="3"
                         android:background="@drawable/square_button_background"
                         android:backgroundTint="@color/darkBlue"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:text="Clear" />
                 </LinearLayout>
             </LinearLayout>
@@ -220,6 +254,8 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/square_button_background"
                     android:backgroundTint="@color/pink"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
                     android:text="=" />
             </LinearLayout>
         </LinearLayout>

@@ -112,10 +112,15 @@ class MainActivity : AppCompatActivity() {
 
         equalButton.setOnClickListener {
             val expression = Expression(resultStringBuilder.toString());
-            val expressionResult = expression.evaluate().numberValue.toString();
+            val expressionResult = expression.evaluate().numberValue.toPlainString();
             resultOutputView.text = expressionResult;
-
             resultStringBuilder.clear();
+            resultStringBuilder.append(expressionResult)
+        }
+
+        clearButton.setOnClickListener {
+            resultStringBuilder.clear();
+            resultOutputView.text = "0";
         }
     }
 }
